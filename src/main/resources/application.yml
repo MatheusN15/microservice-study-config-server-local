@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: microservice-study-config-server
+  #profiles:
+    #active:
+    #- native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MatheusN15/microservice-study-config-server
+          #username:
+          #password: 
+          default-label: main
+          search-paths:
+          - 'microservice-study-service*'

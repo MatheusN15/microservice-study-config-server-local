@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: microservice-study
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+microservice-study:
+  greeting: "Hello"
+  default-value: "World"
